@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                 <meta charset="utf-8" />
+                <title>Adivinhe o número </title>
+                <script type="text/javascript" src="script.js"></script>
+                <link rel="stylesheet" type="text/css" href="style.css" />
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css" />
+                <link rel="stylesheet" type="text/css" href="../../../css/template.css" />
+                <link href="http://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet" type="text/css" />
+                <link href="http://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" type="text/css" />
+                <link href="http://fonts.googleapis.com/css?family=Play|Inconsolata" rel="stylesheet" type="text/css" />
+                <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">   
+        </head>
+<body onload="resetar()">
+        <header>
+                <div class="topo_faixa">
+                        <div class="container">
+                                <div class="flex">
+                                                <div class="esquerda">
+                                                                <div class="logo">
+                                                                        <img src="../../../images/logo/logo.png" width="100" />
+                                                                </div>
+                                                                <div class="frase">
+                                                                        Albert de Oliveira Alves Grillo
+                                                                </div>
+                                                </div>  
+                                                <div class="direita">
+                                                                <div class="social">
+                                                                         <ul> 
+                                                                                <li><a href="https://github.com/albertalves" target="_blank"><img src="../../../images/sociais/github.png" width="25" onmouseover="this.src ='../../../images/hover/github.png' " onmouseout= "this.src ='../../../images/sociais/github.png' "/></a></li>
+
+                                                                                <li><a href="https://www.facebook.com/profile.php?id=100000541698084" target="_blank"><img src="../../../images/sociais/facebook.png" width="25" onmouseover="this.src ='../../../images/hover/facebook.png' " onmouseout= "this.src ='../../../images/sociais/facebook.png' "/></a></li>
+
+                                                                                <li><a href="https://www.linkedin.com/in/albert-alves-2b8a4b172/" target="_blank"><img src="../../../images/sociais/linkedin.png" width="25" onmouseover="this.src ='../../../images/hover/linkedin.png' " onmouseout= "this.src ='../../../images/sociais/linkedin.png' "/></a></li>
+
+                                                                                <li><a href="mailto:albertbr2008@gmail.com" target="_blank"><img src="../../../images/sociais/google.png" width="25" onmouseover="this.src ='../../../images/hover/google.png' " onmouseout= "this.src ='../../../images/sociais/google.png' "/></a></li>
+                                                                        </ul>
+                                                                        
+                                                                </div>
+                                                                <div class="menu">
+                                                                        <ul> 
+                                                                                <a href=""><li>INÍCIO</li></a>
+                                                                                <a href=""><li>CURRÍCULO</li></a>
+                                                                                <a href=""><li>CONTATO</li></a>
+                                                                        </ul>
+                                                                </div>
+                                                </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="topo_banner"> 
+                        <div class="aviso">
+                                <div class="aviso_text"> 
+                                        <h3>Fase de Construção</h3>
+                                        Em breve estarei disponibilizando mais projetos.
+                                </div>
+                                
+                        </div>
+                </div>
+        </header>
+
+        <div class="container">
+                <section id="geral">
+                        <section>
+                                <div class="proj_faixa">
+                                        <div class="proj_titulo">PROJETOS</div>
+                                        <div class="projetos" id="java">
+                                                <ul>    
+                                                        <li><a href="../../../../index.html">Html&Css</a></li>
+                                                        <li><a href="java.html">Java</a></li>
+                                                        <li class="active"><a href="javascript.html">JavaScript</a></li>
+                                                        <li><a href="php.html">PHP</a></li>
+                                                        <li><a href="c.html">C++</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                <!---------- POSTAGENS AQUI -------->
+                <div class="widget_container">
+                     <div class="widget_container_post">   
+                            <h2 id="msg1">Acerte o número! </h2>
+                            <div id="n1">?</div>
+                            <input type="text" id="n2"/>
+                            <div style="clear:both"></div>
+                            <button onclick="verificar()" id="bt">Verificar</button>
+                            <h2 id="msg2">Mensagem:</h2>
+                      </div>
+                </div>
+                <!---------- POSTAGENS AQUI -------->
+                        </section>
+                        <aside>         
+                                                <div class="widget_container_aside">
+                                                        <div class="widget_titulo">
+                                                                Sobre
+                                                        </div>
+                                                        <div class="widget_conteudo">
+                                                                <div class="widget_imagem">
+                                                                        <img src="../../../images/albert.jpg" />
+                                                                </div>
+                                                                <div class="widget_frase">
+                                                                        Albert Alves
+                                                                </div>
+                                                                <div class="widget_container_descricao">
+                                                                        Rio de Janeiro, 23 Anos, Cursando 4° Período em Análise e Desenvolvimento de Sistemas na Universidade Estácio de Sá. 
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="widget_container_aside">
+                                                        <div class="widget_titulo">
+                                                                O que tenho feito ?
+                                                        </div>  
+                                                        <div class="widget_conteudo">
+                                                                <div class="widget_container_descricao">
+                                                                        Atualmente venho estudando e aplicando em meus projetos de estudo, algumas bibliotecas e frameworks para desenvolvimento de sistemas web.
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                
+                        </aside>
+                </section>
+        </div>
+
+
+
+<script type="text/javascript" src="../../../js/jquery-3.3.1.min.js"></script>
+<script src="../../../js/popper.js" ></script>
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
